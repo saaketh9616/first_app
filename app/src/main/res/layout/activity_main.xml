@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/textview5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C8E6C9"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/TopText"
+        android:layout_width="312dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="88dp"
+        android:background="#4DB6AC"
+        android:fontFamily="@font/ubuntu"
+        android:paddingLeft="12sp"
+        android:paddingTop="8sp"
+        android:paddingRight="12sp"
+        android:paddingBottom="8sp"
+        android:text="Welcome to My First App"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/tryonce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu"
+        android:onClick="funcb"
+        android:paddingLeft="14sp"
+        android:paddingTop="8sp"
+        android:paddingRight="14sp"
+        android:paddingBottom="8sp"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nump"
+        app:layout_constraintVertical_bias="0.068" />
+
+    <TextView
+        android:id="@+id/instructi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="#FF9E80"
+        android:fontFamily="@font/ubuntu"
+        android:paddingLeft="12sp"
+        android:paddingTop="8sp"
+        android:paddingRight="12sp"
+        android:paddingBottom="8sp"
+        android:text="Guess a Number between 1 and 20"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TopText" />
+
+    <EditText
+        android:id="@+id/nump"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:background="#EC407A"
+        android:ems="10"
+        android:fontFamily="@font/ubuntu"
+        android:hint="Enter Number:"
+        android:inputType="number"
+        android:paddingLeft="12sp"
+        android:paddingTop="8sp"
+        android:paddingRight="12sp"
+        android:paddingBottom="8sp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instructi" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#AB47BC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.315"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.105" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:background="#FFD54F"
+        android:paddingLeft="12sp"
+        android:paddingTop="8sp"
+        android:paddingRight="12sp"
+        android:paddingBottom="8sp"
+        android:text="How was the app: "
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tryonce"
+        app:layout_constraintVertical_bias="0.19" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
